@@ -3,19 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photo Gallery</title>
+<title>Beautiful Photo Gallery</title>
 <style>
-  .responsive-image {
-    max-width: 100%;
-    height: auto;
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
   }
-  /* Add more styles for your gallery or image container as needed */
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .photo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .photo-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .photo-card img:hover {
+    opacity: 0.9;
+  }
+
+  .photo-description {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .photo-description h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .photo-description p {
+    color: #666;
+    font-size: 14px;
+  }
 </style>
 </head>
 <body>
 
-<div class="image-container">
-  <img src="https://www.kt5.cn/wp-content/uploads/2022/06/anya-01.jpg" alt="Descriptive text about the image" class="responsive-image">
+<div class="gallery-container">
+  <div class="photo-card">
+    <img src="https://www.kt5.cn/wp-content/uploads/2022/06/anya-01.jpg" alt="Description of the image">
+    <div class="photo-description">
+      <h3>Image Title</h3>
+      <p>Some description about the image goes here.</p>
+    </div>
+  </div>
+  <!-- Repeat the .photo-card block for more images -->
 </div>
 
 </body>
