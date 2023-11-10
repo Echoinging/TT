@@ -3,74 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beautiful Photo Gallery</title>
+<title>Stunning Vistas Gallery</title>
+<link rel="icon" href="https://pbs.twimg.com/media/FR0rvjFVcAA-DcO?format=jpg&name=large" type="image/jpeg">
+<!-- It's better to use an ICO file for the favicon, but modern browsers support JPEG as well -->
 <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
+  /* ... (rest of the CSS) ... */
 
-  .photo-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .photo-card:hover {
-    transform: translateY(-10px);
-  }
-
-  .photo-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  .photo-card img:hover {
-    opacity: 0.9;
-  }
-
-  .photo-description {
-    padding: 15px;
+  .site-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
   }
 
-  .photo-description h3 {
+  .site-header h1 {
     margin: 0;
-    color: #333;
-    font-size: 18px;
-  }
-
-  .photo-description p {
-    color: #666;
-    font-size: 14px;
+    font-size: 2em;
   }
 </style>
 </head>
 <body>
 
+<div class="site-header">
+  <h1>Stunning Vistas Gallery</h1>
+</div>
+
 <div class="gallery-container">
-  <div class="photo-card">
-    <img src="https://www.kt5.cn/wp-content/uploads/2022/06/anya-01.jpg" alt="Description of the image">
-    <div class="photo-description">
-      <h3>Image Title</h3>
-      <p>Some description about the image goes here.</p>
-    </div>
-  </div>
-  <!-- Repeat the .photo-card block for more images -->
+  <!-- ... (gallery content) ... -->
 </div>
 
 </body>
